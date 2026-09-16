@@ -16,8 +16,8 @@ Group 9 — Cumulative Operations
 
  The solution uses vector<double> to store the input data.
 
-- **Cumulative functions** process the data from the beginning and keep track of the result so far.
-- **Rolling functions** use a fixed-size window that moves through the vector.
+- Cumulative functions process the data from the beginning and keep track of the result so far.
+- Rolling functions use a fixed-size window that moves through the vector.
 - A helper function, printVector(), is used to display results.
 - Input validation is included for empty data and invalid window sizes.
 
