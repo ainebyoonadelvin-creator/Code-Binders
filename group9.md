@@ -1,18 +1,4 @@
-None selected
 
-Skip to content
-Using Gmail with screen readers
-1 of 2,464
-Document from SSEJJ
-Inbox
-
-Ibra Ssa <ibrassaj@gmail.com>
-Attachments
-11:49 AM (10 hours ago)
-to me
-
- One attachment
-  •  Scanned by Gmail
 # Group 9 — Cumulative Operations (C++ Re-implementation)
 
 ## Exercise
