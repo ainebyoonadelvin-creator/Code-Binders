@@ -54,8 +54,13 @@ vector<double> cumulative_min(const vector<double>& data) {
 }
 
 // 2. CUMULATIVE MAXIMUM
+/*This C++ function calculates the cumulative maximum of a list of numbers, tracking the highest value seen up to each point.
+Handles empty input: It immediately returns an empty vector if the input is empty to avoid errors.
+Initializes tracking: It sets the first element as the initial currentMax and adds it to the result list.
+Loops through the data: It iterates through the remaining numbers one by one.
+Updates the maximum: If the current number is strictly greater than currentMax, it updates currentMax to this new value.
+Stores the result: It appends the updated currentMax to the result vector during each step of the loop.*/
 // input : {4, 2, 7, 1, 9, 3}   output: {4, 4, 7, 7, 9, 9}
-// =====================================================================
 vector<double> cumulative_max(const vector<double>& data) {
     vector<double> result;
     if (data.empty()) return result;
