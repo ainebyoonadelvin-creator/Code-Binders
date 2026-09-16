@@ -27,10 +27,15 @@ void printVector(const string& label, const vector<double>& v) {
     cout << "\n";                 // new line after the list
 }
 
-// =====================================================================
-// 1. CUMULATIVE MINIMUM
+// 1. CUMULATIVE MINIMUM by LUBANGAKENE DERRICK AND NAKIBINGE JEREMIAH
+/* This section calculates the running minimum of a list of numbers. 
+It tracks the smallest value seen so far as it moves through the vector from left to right.
+Guard Clause: If the input list is empty, it immediately returns an empty result to prevent errors.
+Initialization: It sets the first number as the starting minimum (currentMin) and adds it to the output list.
+The Loop: It loops through the remaining numbers one by one.
+The Condition: If it finds a number smaller than currentMin, it updates currentMin to that new value.Recording: 
+It saves the currentMin (whether updated or unchanged) into the result list at each step*/
 // input : {4, 2, 7, 1, 9, 3}   output: {4, 2, 2, 1, 1, 1}
-// =====================================================================
 vector<double> cumulative_min(const vector<double>& data) {
     vector<double> result;              // empty "answer box"
 
@@ -48,7 +53,6 @@ vector<double> cumulative_min(const vector<double>& data) {
     return result;                      // hand the answer back
 }
 
-// =====================================================================
 // 2. CUMULATIVE MAXIMUM
 // input : {4, 2, 7, 1, 9, 3}   output: {4, 4, 7, 7, 9, 9}
 // =====================================================================
@@ -109,11 +113,15 @@ vector<double> rolling_sum(const vector<double>& data, int window) {
     return result;
 }
 
-// =====================================================================
-// 5. ROLLING MEAN (average of each window)
+
+// 5. ROLLING MEAN (average of each window) BY AINEBYOONA DELVIN
+/*This function calculates a rolling sum by sliding a fixed-size window across a list of numbers and adding up the values inside it.
+Safety Check:It first verifies that the input list isn't empty and that the window size is valid (greater than zero and not larger than the list itself). If invalid, it safely exits early.
+Window Sliding: It loops through the list to find every possible starting point where a full window can fit without going past the end of the data.
+Summation: For each starting position, it runs a second loop to add up the exact number of elements specified by the window size.
+Output: It saves each calculated sum into a new list and returns it.Would you like to see how to optimize this code so it runs faster, or do you need help integrating it into a larger program?*/
 // input : {4, 2, 7, 1, 9, 3}, window = 3
 // output: {4.33, 3.33, 5.67, 4.33}
-// =====================================================================
 vector<double> rolling_mean(const vector<double>& data, int window) {
     vector<double> result;
     int n = (int)data.size();
