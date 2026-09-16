@@ -64,7 +64,6 @@ Stores the result: It appends the updated currentMax to the result vector during
 vector<double> cumulative_max(const vector<double>& data) {
     vector<double> result;
     if (data.empty()) return result;
-
     double currentMax = data[0];
     result.push_back(currentMax);
 
