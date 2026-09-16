@@ -71,7 +71,6 @@ Example:
 text
 Input:
 4 2 7 1 9 3
-
 Window:
 3
 The windows are:
