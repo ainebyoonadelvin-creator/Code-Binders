@@ -32,29 +32,24 @@
 
  The functions were tested using:
 
-```
 Input data: {4, 2, 7, 1, 9, 3}
 Window: 3
-```
 
  ### Expected Output
 
-```
 cumulative_min  : 4.00  2.00  2.00  1.00  1.00  1.00
 cumulative_max  : 4.00  4.00  7.00  7.00  9.00  9.00
 cumulative_mean : 4.00  3.00  4.33  3.50  4.60  4.33
 rolling_sum     : 13.00  10.00  17.00  13.00
 rolling_mean    : 4.33  3.33  5.67  4.33
-```
 
  ## Working Example
 
  For the rolling window of `3`:
 
-```
 {4, 2, 7} → 13.00
 {2, 7, 1} → 10.00
 {7, 1, 9} → 17.00
 {1, 9, 3} → 13.00
-```
+
 
